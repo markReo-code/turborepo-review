@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@hono/node-server": "^2.1.3",
+    "@repo/db": "workspace:*",
     "dotenv": "^18.0.9",
+    "drizzle-orm": "^0.45.4",
     "hono": "^4.13.14"
   },
   "devDependencies": {
