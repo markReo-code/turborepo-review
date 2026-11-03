@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: turborepo-review-db
+    environment:
+      POSTGRES_USER: review
+      POSTGRES_PASSWORD: review1234
+      POSTGRES_DB: review_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - review_db:/var/lib/postgresql/data
+
+volumes:
+  review_db:
